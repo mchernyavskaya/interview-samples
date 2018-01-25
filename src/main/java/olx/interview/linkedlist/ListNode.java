@@ -14,7 +14,7 @@ public class ListNode {
 
     private ListNode next;
 
-    public ListNode(int x) {
+    private ListNode(int x) {
         val = x;
     }
 
@@ -23,7 +23,7 @@ public class ListNode {
      *
      * @param x Array
      */
-    public ListNode(int[] x) {
+    ListNode(int[] x) {
         if (x != null && x.length > 0) {
             ListNode previous = null;
             for (int value : x) {
